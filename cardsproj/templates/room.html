@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <h1>Room 1</h1>
+
+
+
+    {% include "Room.vue" %}
+
+    <script src="{% static 'js/vendor/vue.js' %}"></script>
+    <script src="{% static 'js/vendor/vue-resource.js' %}"></script>
+    <script src="{% static 'js/sources/room.js' %}"></script>
+
+{% endblock %}

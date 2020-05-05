@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <h1>Game rooms</h1>
+    <a href="{% url 'game_room' %}">Room 1</a>
+
+    <h1>Decks</h1>
+    {% include "App.vue" %}
+
+    <script src="{% static 'js/vendor/vue.js' %}"></script>
+    <script src="{% static 'js/vendor/vue-resource.js' %}"></script>
+    <script src="{% static 'js/sources/app.js' %}"></script>
+
+{% endblock %}
